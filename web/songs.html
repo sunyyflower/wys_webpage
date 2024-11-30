@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐分享</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <style>
+        .display .music p
+        {
+            text-align: center;
+        }
+        .display .music .player
+        {
+            position:relative;
+            width: 200px;
+            height: 100px;
+            background: #3347888c;
+            border: 2px solid #3347888c;
+            border-radius: 80px;
+            padding: 20px 30px;
+            box-shadow: -10px -10px 15px #3347888c,
+                        10px 10px 15px rgba(0,0,0,0.1),
+                        inset -5px -5px 15px #3347888c,
+                        inset 5px 5px 15px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .display .music .player .button span{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: rgba(7, 22, 102, 0.644);
+            box-shadow: inset 0 -5px 5px rgba(0,0,0,0.1),
+                        0 5px 10px rgba(0,0,0,0.1),
+                        0 10px 15px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .display .music .player .button span:active{
+            color: #ffffff;
+        }
+        .display .music .player .button  span ion-icon{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body >
+    <div class="nav">
+        <ul class="navlist">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="https://flyjumpbow.github.io/609" target="_blank">寝室主页</a></li>
+            <li><a href="introduction.html">个人简介</a></li>
+            <li><a href="album.html">相册</a></li>
+            <li><a href="songs.html">音乐分享</a></li>
+            <li><a href="contact.html">联系我</a></li>
+        </ul>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <div class="display">
+        <div class="music">
+             <div class="player">
+                    <audio src="music.mp3" id="audio"></audio>
+                    <div class="button">
+                            <span class="pause">
+                                <ion-icon name="play-outline"></ion-icon>
+                            </span>
+                    </div>
+            </div>
+            <p>Variations On The Kanon By Pachelbel</p>
+            <p>George Winston</p>
+            <script>
+                const playPause=document.querySelector('.display .music .player .button');
+                const thesong=document.getElementById('audio')
+                playPause.addEventListener('click',() =>{
+                    if(thesong.paused){
+                        thesong.play();
+                    }else{
+                        thesong.pause();
+                    }
+                });
+            </script>
+        </div>
+   </div>
+</body>
+</html>

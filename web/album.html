@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相册</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <style>
+        .mainbox
+        {
+            width:1000px;
+            margin: 20px auto;
+        }
+        .flexbox{
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .block{
+                width: 300px;
+                height: 300px;
+                border: 5px solid #ffffff8a;
+                border-radius: 5px;
+                position: relative;
+                overflow: hidden;
+        }
+        .block:hover{
+            transform:scale(1.05);
+        }
+    </style>
+</head>
+<body >
+   <div class="nav">
+        <ul class="navlist">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="https://flyjumpbow.github.io/609" target="_blank">寝室主页</a></li>
+            <li><a href="introduction.html">个人简介</a></li>
+            <li><a href="album.html">相册</a></li>
+            <li><a href="songs.html">音乐分享</a></li>
+            <li><a href="contact.html">联系我</a></li>
+            
+        </ul>
+   </div>
+   <div class="display">
+    <div class="mainbox">
+        <div class="flexbox">
+            <div class="block">
+                <img src="../img/food/food1.jpg" width="300" height="300">
+            </div>
+            <div class="block">
+                <img src="../img/food/food2.jpg" width="300" height="300">
+            </div>
+            <div class="block">
+                <img src="../img/food/food3.jpg" width="300" height="300">
+            </div>
+        </div>
+        <div class="flexbox">
+            <div class="block">
+                <img src="../img/food/food4.jpg" width="300" height="300">
+            </div>
+            <div class="block">
+                <img src="../img/food/food5.jpg" width="300" height="300">
+            </div>
+            <div class="block">
+                <img src="../img/food/food6.jpg" width="300" height="300">
+            </div>
+        </div>
+   </div>
+   </div>
+</body>
+</html>

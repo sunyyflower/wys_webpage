@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <style>
+        .content{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height:100vh; 
+            color: #ffffff;
+            text-align: center;
+        }
+        .textbox{
+            background: linear-gradient(#cea54c,#758eff75);
+            width:500px;
+            height: 500px;
+            padding: 15px;
+            line-height: 100px;
+            margin-left: 20px;
+            border-radius: 10px;
+        }
+        
+        .messagebox{
+
+            background: linear-gradient(#cea54c,#758eff75);
+            width:500px;
+            height: 500px;
+            padding: 15px;
+            margin-right: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .content .textbox .text p{
+            font-size: 30px;
+        }
+        .content .messagebox .input{
+            display: block;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            height: 300px;
+            width: 300px;
+            border: 1px soid #ccc;
+            border-radius: 3px;
+            resize: vertical;
+        }
+        .content .messagebox .submit{
+            background-color: #0c1c7a;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body >
+   <div class="nav">
+        <ul class="navlist">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="https://flyjumpbow.github.io/609" target="_blank">寝室主页</a></li>
+            <li><a href="introduction.html">个人简介</a></li>
+            <li><a href="album.html">相册</a></li>
+            <li><a href="songs.html">音乐分享</a></li>
+            <li><a href="contact.html">联系我</a></li>
+        </ul>
+   </div>
+   <div class="content">
+        <div class="textbox">
+            <div class="text">
+                <h1  style="font-size: 75px;">联系方式</h1>
+                <p>姓名：王钰杉</p>
+                <p>手机号：***********</p>
+                <p>QQ号：********</p>
+                <p>邮箱地址：**********</p>
+            </div>
+        </div>
+        <div class="messagebox">
+            <h1 style="font-size: 75px;">留言板</h1>
+            <textarea class="input" placeholder="给我留言"></textarea>
+            <button class="submit" onclick="clicksubmit()">留言</button>
+            <script>
+                function clicksubmit(){
+                        alert("留言成功！");
+                }
+            </script>
+        </div>
+    </div>
+  
+  
+</body>
+</html>

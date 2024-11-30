@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    margin:0;
+    padding: 0;
+    background-image: url(../img/TheStarryNight.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.nav{
+    width: 100;
+    height: 40px;
+    background: linear-gradient(#030c29,#4961eb73);
+}
+.navlist li{
+    float:left;
+    height: 40px;
+    width: 100px;
+    line-height: 40px;
+    text-align: center;
+}
+.navlist a{
+    color: #ffe552;
+    display: block;
+}
+.navlist a:hover{
+    background-color: #c5c476;
+}
+.navlist{
+    width: 800px;
+    margin: auto;
+}
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#ffffff8c;
+}

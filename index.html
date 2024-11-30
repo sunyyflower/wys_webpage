@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        .content
+        {
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+        }
+        .content .welcome{
+            text-align: center; 
+            width: 500px;
+            height: 350px;
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(#ffbb3d69,#ffe70c77,#72b4ff81,#09205269);
+        }
+        .content .welcome h1{
+           font-size: 100px;
+           color: rgb(255, 255, 255);
+        }
+        .content .welcome p{
+            color: rgb(255, 255, 255);
+            font-size: large;
+        }
+        .content .welcome #clockbox
+        {
+            padding: 5px;
+            font-size: 100px;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body >
+   <div class="nav">
+        <ul class="navlist">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="https://flyjumpbow.github.io/609" target="_blank">寝室主页</a></li>
+            <li><a href="web/introduction.html">个人简介</a></li>
+            <li><a href="web/album.html">相册</a></li>
+            <li><a href="web/songs.html">音乐分享</a></li>
+            <li><a href="web/contact.html">联系我</a></li>
+            
+        </ul>
+   </div>
+   <div class="content">
+        <div class="welcome">
+            <h1>欢迎</h1>
+            <p>欢迎来到王钰杉的网页制作作业</p>
+            <div id="clockbox"></div>
+            <script>
+                
+                function nowtime()
+                {
+                    const now=new Date();
+                    const second=now.getSeconds().toString().padStart(2,'0');
+                    const minute=now.getMinutes().toString().padStart(2,'0');
+                    const hour=now.getHours().toString().padStart(2,'0');
+                    const clock=document.getElementById("clockbox")
+                    clock.textContent=`${hour}:${minute}:${second}`;
+                }
+               setInterval(nowtime,1000);
+            </script>
+       </div>
+        </div>  
+     
+   
+</body>
+</html>
